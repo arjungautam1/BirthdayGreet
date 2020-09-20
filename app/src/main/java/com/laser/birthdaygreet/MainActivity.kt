@@ -22,8 +22,12 @@ class MainActivity : AppCompatActivity() {
 //        val name=nameInput.editableText.toString()
 //        Toast.makeText(this,"Name is $name",Toast.LENGTH_LONG).show()
 
+        val name=nameInput.editableText.toString()
+
+
         val intent= Intent(this,BirthdayGreetingActivity::class.java)
 
+        intent.putExtra(BirthdayGreetingActivity.NAME_EXTRA,name)
         startActivity(intent)
 
 
